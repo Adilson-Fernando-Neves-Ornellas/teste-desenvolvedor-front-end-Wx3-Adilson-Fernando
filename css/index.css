@@ -100,9 +100,10 @@
 }
 
 .carousel-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: transparent;
     border: none;
-    color: white;
+    /* color: white; */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -123,4 +124,80 @@
 }
 
 /* slick 02 */
+.carousel-container-dois {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
+.carousel-track {
+    display: flex;
+    gap: 8px; /* Espaço entre os cards */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: calc(100% / 4 - 8px); 
+}
+
+.carousel-controls_dois {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.carousel-control {
+    background-color: transparent;
+    border: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        width: calc(33.33% - 8px); /* Mostra 3 itens em telas médias */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        width: calc(75% - 8px); /* Mostra 2 itens em telas pequenas */
+    }
+}
+
+.ver_todos_lancamentos {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    width: 100%;
+}
