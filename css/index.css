@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .header_desktop{
     display: flex;
     justify-content: center;
@@ -75,7 +79,7 @@
     }
 }
 
-/* slick */
+/* slick ---------------------------------------------------------------------------------------------*/
 
 .carousel-container {
     position: relative;
@@ -100,10 +104,8 @@
 }
 
 .carousel-controls button {
-    /* background-color: rgba(0, 0, 0, 0.5); */
     background-color: transparent;
     border: none;
-    /* color: white; */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -123,7 +125,7 @@
     text-align: center;
 }
 
-/* slick 02 */
+/* slick 02 -------------------------------------------------------------------------------------- */
 .carousel-container-dois {
     position: relative;
     width: 100%;
@@ -132,7 +134,7 @@
 
 .carousel-track {
     display: flex;
-    gap: 8px; /* Espaço entre os cards */
+    gap: 8px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
@@ -182,13 +184,13 @@
 
 @media (max-width: 768px) {
     .carousel-item {
-        width: calc(33.33% - 8px); /* Mostra 3 itens em telas médias */
+        width: calc(33.33% - 8px); 
     }
 }
 
 @media (max-width: 576px) {
     .carousel-item {
-        width: calc(75% - 8px); /* Mostra 2 itens em telas pequenas */
+        width: calc(75% - 8px);
     }
 }
 
@@ -200,4 +202,28 @@
     margin-bottom: 40px;
     display: block;
     width: 100%;
+}
+/* --------------------------------------------------------------------------------------------------- */
+.vantagens{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card_info_vantagens{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.imagens_info_vantagens{
+    width: 50px;
+}
+.text_info_vantagens{
+    color: white;
+    text-align: center;
 }
