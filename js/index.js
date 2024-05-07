@@ -120,3 +120,50 @@ function prevSlideTres() {
 
 // Exibir o primeiro slide inicialmente
 showSlideTres(currentIndexTres);
+
+// slick 04-----------------------------------------------------------------------------------------------------
+let currentIndexquatro = 0;
+const itemsSlickquatro = document.querySelectorAll('.carousel-item-quatro');
+const dotsContainerquatro = document.querySelector('.carousel-dots-quatro');
+
+// Criar os indicadores de posição (bolinhas)
+for (let i = 0; i < itemsSlickquatro.length; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-dot-quatro');
+    if (i === currentIndexquatro) {
+        dot.classList.add('active');
+    }
+    dot.setAttribute('onclick', `goToSlidequatro(${i})`);
+    dotsContainerquatro.appendChild(dot);
+}
+
+function showSlidequatro(index) {
+    itemsSlickquatro.forEach((item, i) => {
+        const offset = index * -100;
+        item.style.transform = `translateX(${offset}%)`;
+    });
+
+    // Atualizar o indicador de posição (bolinhas)
+    const dots = document.querySelectorAll('.carousel-dot-quatro');
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+}
+
+function goToSlidequatro(index) {
+    currentIndexquatro = index;
+    showSlidequatro(currentIndexquatro);
+}
+
+function nextSlidequatro() {
+    currentIndexquatro = (currentIndexquatro + 1) % itemsSlickquatro.length;
+    showSlidequatro(currentIndexquatro);
+}
+
+function prevSlidequatro() {
+    currentIndexquatro = (currentIndexquatro - 1 + itemsSlickquatro.length) % itemsSlickquatro.length;
+    showSlidequatro(currentIndexquatro);
+}
+
+// Exibir o primeiro slide inicialmente
+showSlidequatro(currentIndexquatro);
