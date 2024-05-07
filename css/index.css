@@ -282,7 +282,7 @@
     cursor: pointer;
 }
 
-.ccarousel-dots-tres {
+.carousel-dots-tres {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -422,7 +422,7 @@
     cursor: pointer;
 }
 
-.ccarousel-dots-quatro {
+.carousel-dots-quatro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -463,4 +463,128 @@
     display: block;
     width: 100%;
 }
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.banner_fixo{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.banner_fixo img {
+    width: 100%;
+}
+
+/* slick 05  -------------------------------------------------------------------------------------- */
+.section_depoimentos{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.title_section_depoimentos{
+    text-align: center;
+    color: white;
+}
+.sub_title_section_depoimentos{
+    text-align: center;
+    color: gray;
+}
+.carousel-container-cinco {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track-cinco {
+    display: flex;
+    gap: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item-cinco {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: calc(92% / 3 - 8px);
+    background-color: #E8E8E8;
+    border-radius: 8px;
+    padding: 20px;
+}
+.div_card_depoimento{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.nome_location_card_depoimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.nome_card_depoimento{
+    color: rgba(165, 1, 1, 0.723);
+    font-weight: 800;
+}
+.span_aspas_depoimento{
+    color: rgba(165, 1, 1, 0.723);
+    font-weight: 800;
+}
+.text_depoimento_card{
+    display: flex;
+    gap: 30px;
+}
+.carousel-controls_cinco {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.carousel-control-cinco {
+    background-color: transparent;
+    border: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ccarousel-dots-cinco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-dot-cinco {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #E8E8E8;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dot-cinco.active {
+    background-color: #E8E8E8;
+    border-radius: 25%;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    .carousel-item-cinco {
+        width: calc(33.33% - 8px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item-cinco {
+        width: calc(75% - 8px);
+    }
+}
+
 /* -------------------------------------------------------------------------------------------------------------------------- */

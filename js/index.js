@@ -167,3 +167,40 @@ function prevSlidequatro() {
 
 // Exibir o primeiro slide inicialmente
 showSlidequatro(currentIndexquatro);
+
+// slick 05-----------------------------------------------------------------------------------------------------
+let currentIndexcinco = 0;
+const itemsSlickcinco = document.querySelectorAll('.carousel-item-cinco');
+const dotsContainercinco = document.querySelector('.carousel-dots-cinco');
+
+// Criar os indicadores de posição (bolinhas)
+for (let i = 0; i < itemsSlickcinco.length; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-dot-cinco');
+    if (i === currentIndexcinco) {
+        dot.classList.add('active');
+    }
+    dot.setAttribute('onclick', `goToSlidecinco(${i})`);
+    dotsContainercinco.appendChild(dot);
+}
+
+function showSlidecinco(index) {
+    itemsSlickcinco.forEach((item, i) => {
+        const offset = index * -100;
+        item.style.transform = `translateX(${offset}%)`;
+    });
+
+    // Atualizar o indicador de posição (bolinhas)
+    const dots = document.querySelectorAll('.carousel-dot-cinco');
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+}
+
+function goToSlidecinco(index) {
+    currentIndexcinco = index;
+    showSlidecinco(currentIndexcinco);
+}
+
+// Exibir o primeiro slide inicialmente
+showSlidecinco(currentIndexcinco);
