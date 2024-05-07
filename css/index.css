@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 .header_desktop{
     display: flex;
@@ -122,13 +123,17 @@
 .section_lançamentos{
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .title_section_lançamentos{
     text-align: center;
 }
 .carousel-container-dois {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -142,7 +147,12 @@
 .carousel-item {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    width: calc(100% / 4 - 8px); 
+    width: calc(100% / 4 - 8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .carousel-controls_dois {
@@ -242,13 +252,17 @@
 .section_destaques{
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .title_section_destaques{
     text-align: center;
 }
-.ccarousel-container-tres {
+.carousel-container-tres {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -262,7 +276,12 @@
 .carousel-item-tres {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    width: calc(100% / 4 - 8px); 
+    width: calc(100% / 4 - 8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
 }
 
 .carousel-controls_tres {
@@ -382,13 +401,17 @@
 .section_outlet{
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .title_section_outlet{
     text-align: center;
 }
-.ccarousel-container-quatro {
+.carousel-container-quatro {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -403,6 +426,11 @@
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: calc(100% / 4 - 8px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .carousel-controls_quatro {
@@ -479,6 +507,10 @@
     background-color: black;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .title_section_depoimentos{
     text-align: center;
@@ -487,10 +519,11 @@
 .sub_title_section_depoimentos{
     text-align: center;
     color: gray;
+    font-family: cursive;
 }
 .carousel-container-cinco {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -506,7 +539,7 @@
 .carousel-item-cinco {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    width: calc(92% / 3 - 8px);
+    width: calc(85% / 3 - 8px);
     background-color: #E8E8E8;
     border-radius: 8px;
     padding: 20px;
@@ -747,4 +780,37 @@
 .dados_extras p{
     text-align: center;
     color: gray;
+}
+.img_card_slick{
+    width: 80%;
+    height: -webkit-fill-available;
+}
+.tile_product_slick{
+    color: grey;
+}
+.referenci_product_slick{
+    color: gray;
+}
+.price_product_slick{
+    color: rgba(165, 1, 1, 0.723);
+    font-weight: 900;
+    margin-top: 5px;
+}
+.meio_pagamento_product_slick{
+    color: rgba(165, 1, 1, 0.723);
+    font-weight: 900;
+}
+.meio_pagamento_product_slick_parcelado{
+
+}
+.button_product_slick{
+    border: 0;
+    background-color: gray;
+    width: -webkit-fill-available;
+    width: 65%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
 }
