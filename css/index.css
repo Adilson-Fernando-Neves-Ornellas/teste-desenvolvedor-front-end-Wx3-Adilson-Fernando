@@ -153,6 +153,59 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    position: relative;
+}
+.carousel-item:hover{
+    .div_buttons_product_slick_hover{
+        position: absolute;
+        top: 38%;
+        display: flex;
+        max-width: 140px;
+    }
+}
+.div_buttons_product_slick_hover{
+    position: absolute;
+    top: 38%;
+    display: none;
+    max-width: 140px;
+}
+
+.button_favoritar_slick{
+    border: 0;
+    background-color: #545454;
+    border-right: 1px solid #E8E8E8;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.button_espiar_slick{
+    border: 0;
+    background-color: #545454;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.carousel-item:hover .div_buttons_product_slick_hover {
+    display: flex;
+}
+
+.aviso_lancamento_slick{
+    position: absolute;
+    top: 1.2%;
+    left: 12%;
+    background-color: #545454;
+    padding: 3px;
+    font-size: xx-small;
+    color: white;
+    font-weight: 600;
 }
 
 .carousel-controls_dois {
