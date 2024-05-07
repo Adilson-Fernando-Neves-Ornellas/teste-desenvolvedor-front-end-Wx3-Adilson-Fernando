@@ -588,3 +588,71 @@
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
+
+.newslatter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+@media (max-width: 992px) {
+    .newslatter{
+        flex-direction: column;
+    }
+    .text_newslatter{
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+.div_form_neslatter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.input_newslatter{
+    padding: 5px;
+    width: 30%;
+}
+.button_submit_newslatter{
+    width: 30%;
+    padding: 5px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+.digulgacao{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    background: linear-gradient(gray, white) 50%, linear-gradient(gray, white) 50%; 
+    background-repeat: no-repeat; 
+}
+.div_img_loja{
+    width: 75%;
+}
+.div_img_loja img{
+    width: 100%;
+}
+.div_img_whatsapp{
+    width: 25%;
+}
+.div_img_whatsap_img {
+    width: 100%;
+    height: 98.5%;
+}
+.div_container_digulgacao{
+    width: 25%;
+    height: 50%;
+}
+.div_central_divulgacao{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    width: 75%;
+    background-color: white;
+}
