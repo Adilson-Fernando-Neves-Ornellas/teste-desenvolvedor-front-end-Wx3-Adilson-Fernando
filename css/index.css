@@ -613,6 +613,11 @@
     justify-content: center;
     gap: 5px;
 }
+@media (max-width : 920px) {
+    .div_form_neslatter{
+        padding: 0 5px;
+    }
+}
 .input_newslatter{
     padding: 5px;
     width: 30%;
@@ -649,6 +654,11 @@
     width: 25%;
     height: 50%;
 }
+@media (max-width : 920px) {
+    .div_container_digulgacao{
+        width: 10%;
+    }
+}
 .div_central_divulgacao{
     display: flex;
     gap: 5px;
@@ -681,7 +691,10 @@
 }
 @media (max-width : 920px) {
     .info_loja{
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .info{
+        width: 35%;
     }
 }
 .info{
